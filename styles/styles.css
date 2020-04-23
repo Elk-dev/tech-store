@@ -91,5 +91,31 @@ img {
 }
 
 
+form{
+    padding: 10px;
+    margin: 10px 0;
+    width: 600px;
+}
 
+form > div {
+    margin: 10px 0;
+}
+
+.inline label{
+    display: inline-block;
+    width: 100px;
+}
+
+input[type="text"], input[type="email"], textarea{
+    padding: 10px;
+    width: 400px;
+}
+
+/* TO DO LIST 
+
+Add height to header and footer
+place header links and search bar to the right hand side
+Text alighment of the product to the center
+In product detail html style the table
+*/
 
