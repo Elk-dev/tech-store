@@ -5,9 +5,10 @@ html {
 body {
         font-family: 'Barlow', sans-serif;
         background: white;
-        max-width: 1000px;
+        /*max-width: 80vw;*/
         margin: 0 auto;
         color: rgb(49, 46,46);
+        text-align: center;
       }
 
 ul{
@@ -38,35 +39,25 @@ header h1, nav{
 }
 
 header h1{
-    width: 65%;
+    width: 100%;
 }
 
  header, footer {
         background: #333a40;
         color: white;
-        height: 100px;
+        height: 10%;
       }
 
-main {
-    width: 680px;
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px;
-}
-
-aside {
-    width: 270px;
-    display: inline-block;
-    padding: 10px;
+input[type="search"]{
+    width: 100%;
 }
 
 .product {
     box-sizing: border-box;
     border: 1px solid grey;
-    width: 210px;
+    width: 100%;
     margin: 5px;
     padding: 5px;
-    display: inline-block;
     text-align: center;
 }
 
@@ -147,9 +138,47 @@ th, td{
 tr:hover{
     background: #f5f5f5;
 }
-/* TO DO LIST 
 
-place header links and search bar to the right hand side
-In product detail html style the table
-*/
+@media (min-width: 768px) {
+    input[type="search"]{
+        width: 40%;
+        margin-left: 2em;
+    }
+
+.product{
+    display: inline-block;
+    width: 43%;
+}
+}
+
+@media (min-width:1000px){
+body{
+        text-align: left;
+    }
+header h1{
+        width: 65%;
+    
+    }
+main {
+    width: 68%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+
+aside {
+    width: 27%;
+    display: inline-block;
+    padding: 10px;
+}
+
+.product{
+    width: 30%;
+}
+input[type="search"]{
+    width: 20%;
+}
+
+
+}
 
